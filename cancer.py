@@ -15,9 +15,9 @@ if __name__ == "__main__":
     query='DESCRIBE people'
     spark.sql(query).show(20)
 
-    query="""SELECT Gender, Country, Age FROM people WHERE Gender=="male" ORDER BY `Age`"""
-    df_people_names = spark.sql(query)
-    df_people_names.show(20)
+    #query="""SELECT Gender, Country, Age FROM people WHERE Gender=="male" ORDER BY `Age`"""
+    #df_people_names = spark.sql(query)
+    #df_people_names.show(20)
 
     query='SELECT Gender, Country, `Age` FROM people WHERE `Age` BETWEEN "35" AND "50" ORDER BY `Age`'
     df_people_35_50 = spark.sql(query)
