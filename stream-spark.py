@@ -34,12 +34,12 @@ def get_spark_results(url_results):
     if  (response.status_code ==  200):
         st.write(response.json())
 
-st.title("Spark & streamlit")
+st.title("José Eduardo Sánchez Martinez")
 
-st.header("spark-submit Job")
+st.header("A01738476\nIngeniería en Robótica y Sitemas Digitales")
 
 github_user  =  st.text_input('Github user', value='Jose05M')
-github_repo  =  st.text_input('Github repo', value='git-labs')
+github_repo  =  st.text_input('Github repo', value='newgit-labs')
 spark_job    =  st.text_input('Spark job', value='spark')
 github_token =  st.text_input('Github token', value='***')
 
