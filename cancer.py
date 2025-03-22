@@ -19,7 +19,7 @@ if __name__ == "__main__":
     #df_people_names = spark.sql(query)
     #df_people_names.show(20)
 
-    query='SELECT Gender, Country, Smoking, `Age` FROM people WHERE `Age` BETWEEN "35" AND "50" ORDER BY `Age`'
+    query='SELECT  `Age`, Gender, Country, Smoking FROM people WHERE `Age` BETWEEN "35" AND "50" ORDER BY `Age`'
     df_people_35_50 = spark.sql(query)
     df_people_35_50.show(20)
     results = df_people_35_50.toJSON().collect()
